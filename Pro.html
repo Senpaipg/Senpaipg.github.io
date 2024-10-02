@@ -1,25 +1,272 @@
-<html>
- <head>
-  <title>Hacked By SENPAI</title> <link rel="icon" type="image/x-icon" href="https://nathanprinsley-files.prinsh.com/data-1/images/NathanPrinsley-gerryspongebob.gif">
-   <meta content='SENPAI Was Here!' name='description'/>
-    <meta content='Hacked By SENPAI' name='keywords'/>
-     <meta content='SENPAI' name='Abstract'/>
-      <meta name="title" content="Hacked By SENPAI"> <meta name="description" content="HACKER"> <meta name="keywords" content="SENPAI">
-       <meta name="googlebot" content="index,follow"/>
-        <meta name="robots" content="all"/>
-         <meta name="robots schedule" content="auto"/>
-         <meta name="distribution" content="global"/>
-          <meta contact='#'/>
-           <meta charset="utf-8"> <style> html, body { background-color: #141414 ; color: #636b6f; margin: 0; } .full-height { height: 100vh; } .flex-center { align-items: center; display: flex; justify-content: center; } .position-ref { position: relative; } .content { text-align: center; } .title { font-size: 10px; padding: 20px; } </style> </head>
-            <body align="center" oncontextmenu="return false" bgcolor="black"><div class="error">  <div class="flex-center position-ref full-height"> <div class="content">
-            <iframe width="0" height="0" src="https://nathanprinsley-files.prinsh.com/data-1/mp3/way-back-home_shaun.mp3" frameborder="0" allow="autoplay" allowfullscreen="none"></iframe>
-              <div class="text"><font color="white">
-               <img src="https://files.catbox.moe/hob0sh.gif" alt="hacker" width="35%"  border="0"></a><br /><a  height="500">
-  <div class="middle">
-  <code><h1>Hacked By SENPAI</h1>
-                  <br><b><font color="#5cff61" size="3px"> SENPAI </font><font size="3px">| Haxor | Senpai<p> Hunter | Cyber | Hax | Security | Exploit | MrX</font>	
-  <br> 
-    <br><marquee width="500"><font color="red">SENPAI | VOID | CLAY</marquee></pre></font>
-  </div>
-   </body>
-                  </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Ajinkya's Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            user-select: none; /* Disable text selection */
+            -webkit-touch-callout: none; /* Disable callout menu on touch devices */
+            -webkit-user-select: none; /* Disable text selection for WebKit browsers */
+            -moz-user-select: none; /* Disable text selection for Firefox */
+            -ms-user-select: none; /* Disable text selection for Internet Explorer */
+        }
+        body {
+            background-image: url('bg.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white; /* White background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 9999; /* Ensure it's on top */
+        }
+        .loading-circle {
+            border: 8px solid #f3f3f3; /* Light gray */
+            border-top: 8px solid #5181B8; /* Blue */
+            border-radius: 50%;
+            width: 100px; /* Increase size */
+            height: 100px; /* Increase size */
+            animation: spin 1s linear infinite;
+            position: absolute; /* Centering the loader */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .logo {
+            height: 80px; /* Set the size of the logo */
+            width: 80px; /* Set the size of the logo */
+            border-radius: 50%; /* Make the logo circular */
+            position: relative; /* Relative position for z-index */
+            z-index: 1; /* Ensure logo is above the loader */
+        }
+        .top-bar {
+            background-color: #5181B8;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            color: white;
+            display: none; /* Hide initially */
+        }
+        .top-bar img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        .top-bar h1 {
+            flex: 1;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .top-bar .back-icon, .top-bar .dots {
+            height: 24px;
+            width: 24px;
+            margin-right: 10px;
+        }
+        .message-box {
+            padding: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+            overflow-y: auto;
+            flex-grow: 1;
+            display: none; /* Hide initially */
+        }
+        .message {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 80%;
+            position: relative;
+            word-wrap: break-word;
+        }
+        .message small {
+            display: block;
+            margin-top: 5px;
+            text-align: right;
+            font-size: 10px;
+            color: gray;
+        }
+        .file-preview {
+            margin-bottom: 10px; /* Space below file preview */
+        }
+        .date-separator {
+            text-align: center;
+            font-size: 12px;
+            color: white; /* White text */
+            background-color: rgba(0, 0, 0, 0.1); /* Maximum faded black */
+            padding: 5px 10px;
+            border-radius: 15px; /* Rounded rectangular edges */
+            font-weight: bold; /* Bold text */
+            display: inline-block; /* Make the width just enough to fit the text */
+            margin: 10px auto; /* Center the date separator */
+        }
+        .bottom-bar {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .bottom-bar a {
+            color: #24A1DE;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-circle"></div>
+        <img src="logo.jpg" alt="Logo" class="logo"> <!-- Circular logo in center -->
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar" id="topBar">
+        <a href="chat.html">
+            <img src="back-icon.png" alt="Back" class="back-icon">
+        </a>
+        <img src="logo.jpg" alt="Logo">
+        <h1>Ajinkya's Projects 🤖</h1>
+        <img src="three-dots.png" alt="Menu" class="dots">
+    </div>
+    
+    <br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    
+    <iframe src="https://senpaipg.github.io/Pro.html"></iframe>
+
+    <!-- Messages -->
+    <div class="message-box" id="messageBox">
+        <!-- Messages will be dynamically injected here -->
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+        <a href="chat.html">Mute</a>
+    </div>
+
+    <script>
+        // Show loading overlay
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const topBar = document.getElementById('topBar');
+        const messageBox = document.getElementById('messageBox');
+
+        // Simulate loading time
+        setTimeout(() => {
+            loadingOverlay.style.display = 'none'; // Hide loading overlay
+            topBar.style.display = 'flex'; // Show top bar
+            messageBox.style.display = 'flex'; // Show message box
+        }, 4000); // 4 seconds
+
+        // Fetch the chats.json file
+        fetch('chats.json')
+        .then(response => response.json())
+        .then(data => {
+            // Sort chats by date and time in descending order
+            const sortedChats = data.chats.sort((a, b) => {
+                const dateA = new Date(`2023 ${a.date} ${a.time}`);
+                const dateB = new Date(`2023 ${b.date} ${b.time}`);
+                return dateB - dateA;
+            });
+
+            let currentDate = '';  
+            let messagesForCurrentDate = [];
+
+            sortedChats.forEach(chat => {
+                const parsedMessage = chat.message.replace(/\n/g, '<br>');
+
+                if (chat.date !== currentDate) {
+                    if (messagesForCurrentDate.length > 0) {
+                        messagesForCurrentDate.forEach(msg => messageBox.appendChild(msg));
+                        const dateSeparator = document.createElement('div');
+                        dateSeparator.classList.add('date-separator');
+                        dateSeparator.textContent = currentDate;
+                        messageBox.appendChild(dateSeparator);
+                    }
+                    currentDate = chat.date;
+                    messagesForCurrentDate = [];
+                }
+
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+
+                // Check for file attachments and place them above the message
+                if (chat.file) {
+                    const filePreviewDiv = document.createElement('div');
+                    filePreviewDiv.classList.add('file-preview');
+
+                    if (chat.file.picture) {
+                        const img = document.createElement('img');
+                        img.src = chat.file.picture;
+                        img.alt = 'Image';
+                        img.style.maxWidth = '100%'; // Responsive image
+                        filePreviewDiv.appendChild(img);
+                    } else if (chat.file.video) {
+                        const video = document.createElement('video');
+                        video.src = chat.file.video;
+                        video.controls = true; // Add controls to the video
+                        video.style.maxWidth = '100%'; // Responsive video
+                        filePreviewDiv.appendChild(video);
+                    } else if (chat.file.document) {
+                        const link = document.createElement('a');
+                        link.href = chat.file.document;
+                        link.textContent = 'Download Document';
+                        link.target = '_blank'; // Open link in new tab
+                        filePreviewDiv.appendChild(link);
+                    }
+
+                    // Append the file preview above the message
+                    messageDiv.appendChild(filePreviewDiv);
+                }
+
+                // Now append the message content after the file preview
+                messageDiv.innerHTML += `
+                    <div>${parsedMessage}</div>
+                    <small>${chat.post_by}, ${chat.time}</small>
+                `;
+
+                messagesForCurrentDate.push(messageDiv);
+            });
+
+            if (messagesForCurrentDate.length > 0) {
+                messagesForCurrentDate.forEach(msg => messageBox.appendChild(msg));
+                const dateSeparator = document.createElement('div');
+                dateSeparator.classList.add('date-separator');
+                dateSeparator.textContent = currentDate;
+                messageBox.appendChild(dateSeparator);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading chats:', error);
+        });
+    </script>
+</body>
+</html>
